@@ -1,17 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
+import { useMotionEvent } from "../hooks";
 
 const Item = styled.section`
-    width:100%;min-height:100vh;padding:50px 0;text-align:center;background-color:transparent;
+    transition:background-color .5s ease-out;
+    border-bottom:1px solid ${props => props.color}
+    ${props => {
+        if(props.active){
+            return `background-color:${props.color}`
+        }else{
+            return `background-color:transparent`
+        }
+    }}
 `;
 
-const useScroll = () => {
-
-};
-
 const Section = ({ id, color }) => {
+    const { isActive, content } = useMotionEvent();
     return (
-        <Item bgcolor={color}>
+        <Item color={color} active={isActive} ref={content} className={isActive ? "is-motion" : ""}>
             section-{id}
         </Item>
     );

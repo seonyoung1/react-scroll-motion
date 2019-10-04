@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.38",
     "react": "^16.10.1",
     "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.10.1",

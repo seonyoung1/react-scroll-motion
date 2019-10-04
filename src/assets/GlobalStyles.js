@@ -31,6 +31,9 @@ const GlobalStyled = createGlobalStyle`
     .wrapper{
         max-width:1440px;margin:0 auto;width:100%;
     }
+    section{
+        width:100%;min-height:110vh;padding:50px 0;text-align:center;background-color:transparent;
+    }
 `;
 
 export default GlobalStyled;
