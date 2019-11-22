@@ -1,7 +1,7 @@
 # Scroll 에 따라 반응하는 section
 > useMotionEvent Hooks
 >
-> [사이트보기](https://seonn-use-motion.netlify.com/)
+> [사이트보기](https://seony-use-scroll-motion.netlify.com/)
 
 ## 개발환경
 > create-react-app
